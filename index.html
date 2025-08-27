@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Carreira Home Office Começa Aqui | RH Empresarial</title>
+    <meta name="description" content="Vagas 100% home office sem experiência. Na RH Empresarial, oferecemos treinamento completo, suporte contínuo e a estabilidade que você procura.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Google Tag Manager would be inserted here -->
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC; /* Softer gray tone */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+        }
+        /* Style for entry animations */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- SECTION 0: FIXED HEADER -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#0A3D62]"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span class="text-2xl font-bold text-[#0A3D62]">RH Empresarial</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#vaga" class="text-gray-600 hover:text-[#0C7B93] transition-colors font-medium">A Vaga</a>
+                <a href="#como-funciona" class="text-gray-600 hover:text-[#0C7B93] transition-colors font-medium">Como Funciona</a>
+                <a href="#quem-somos" class="text-gray-600 hover:text-[#0C7B93] transition-colors font-medium">Quem Somos</a>
+                <a href="#duvidas" class="text-gray-600 hover:text-[#0C7B93] transition-colors font-medium">Dúvidas</a>
+            </nav>
+            <a href="https://t.me/recrutadordarhbot" target="_blank" class="hidden md:inline-block bg-[#1DD1A1] text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-500 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                Ver Vaga Agora
+            </a>
+            <button id="mobile-menu-button" class="md:hidden p-2">
+                <i data-lucide="menu" class="text-[#0A3D62] h-6 w-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 border-t border-gray-200">
+            <a href="#vaga" class="block text-gray-600 hover:text-[#0C7B93] transition-colors py-2 font-medium">A Vaga</a>
+            <a href="#como-funciona" class="block text-gray-600 hover:text-[#0C7B93] transition-colors py-2 font-medium">Como Funciona</a>
+            <a href="#quem-somos" class="block text-gray-600 hover:text-[#0C7B93] transition-colors py-2 font-medium">Quem Somos</a>
+            <a href="#duvidas" class="block text-gray-600 hover:text-[#0C7B93] transition-colors py-2 font-medium">Dúvidas</a>
+            <a href="https://t.me/recrutadordarhbot" target="_blank" class="w-full mt-2 text-center bg-[#1DD1A1] text-white font-bold py-3 px-5 rounded-lg shadow-md hover:bg-green-500 transition-transform hover:scale-105">
+                Ver Vaga Agora
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- SECTION 1: HERO BLOCK -->
+        <section id="hero" class="py-16 md:py-24 bg-white fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-[#0A3D62] leading-tight">Sua Carreira Home Office Começa Aqui. <span class="text-[#0C7B93]">Sem Exigir Experiência.</span></h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-600">Na RH Empresarial, nós investimos no seu potencial. Oferecemos treinamento completo, suporte contínuo e a estabilidade que você procura para dar o primeiro passo no mercado digital.</p>
+                <div class="mt-8 flex justify-center items-center gap-3 text-gray-500">
+                    <i data-lucide="users" class="w-5 h-5"></i>
+                    <span>Junte-se a centenas de colaboradores que começaram suas carreiras conosco.</span>
+                </div>
+                <div class="mt-10">
+                    <a href="https://t.me/recrutadordarhbot" target="_blank" class="inline-flex items-center justify-center gap-3 bg-[#1DD1A1] text-white text-lg font-bold py-4 px-10 rounded-lg shadow-xl hover:bg-green-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl transform">
+                        <i data-lucide="rocket" class="w-6 h-6"></i>
+                        Iniciar Minha Candidatura Agora
+                    </a>
+                </div>
+                <div class="mt-12 max-w-5xl mx-auto rounded-xl shadow-2xl overflow-hidden border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=1974&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/1200x600/E2E8F0/4A5568?text=Imagem+Indisponível';" alt="Pessoa sorrindo em um ambiente de home office organizado e iluminado" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: HOW IT WORKS -->
+        <section id="como-funciona" class="py-20 md:py-28 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#0A3D62]">Um Processo Seletivo Simples, Transparente e Seguro.</h2>
+                    <p class="mt-4 text-lg text-gray-600">Queremos que você se sinta confiante em cada etapa. Veja como nosso processo funciona, sem surpresas.</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-3 gap-8 md:gap-12">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <div class="mx-auto bg-[#0C7B93]/10 w-16 h-16 rounded-full flex items-center justify-center">
+                            <i data-lucide="message-square" class="w-8 h-8 text-[#0C7B93]"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-[#0A3D62]">Passo 1: Bate-papo Inicial</h3>
+                        <p class="mt-2 text-gray-600">Você conversará com o Carlos, nosso assistente virtual no Telegram. Ele fará algumas perguntas rápidas para entender seu perfil e disponibilidade.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                         <div class="mx-auto bg-[#0C7B93]/10 w-16 h-16 rounded-full flex items-center justify-center">
+                            <i data-lucide="target" class="w-8 h-8 text-[#0C7B93]"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-[#0A3D62]">Passo 2: Análise de Perfil</h3>
+                        <p class="mt-2 text-gray-600">Após o chat, você responderá a alguns cenários práticos. Queremos conhecer sua forma de pensar e resolver problemas, sem respostas certas ou erradas.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-[#1DD1A1] text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                         <div class="mx-auto bg-[#1DD1A1]/10 w-16 h-16 rounded-full flex items-center justify-center">
+                            <i data-lucide="shield-check" class="w-8 h-8 text-[#1DD1A1]"></i>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-[#0A3D62]">Passo 3: Validação de Segurança</h3>
+                        <p class="mt-2 text-gray-600">Para garantir a segurança dos seus pagamentos, nosso sistema parceiro exige uma verificação de titularidade simbólica de R$ 1,00. Este valor é <strong>100% reembolsado</strong> no seu primeiro pagamento. Se preferir, <strong>você terá a opção de receber nosso auxílio para esta etapa.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE JOB -->
+        <section id="vaga" class="py-20 md:py-28 bg-white fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#0A3D62]">Atendente Online (100% Home Office)</h2>
+                    <p class="mt-4 text-lg text-gray-600">Uma oportunidade clara e profissional para você iniciar sua jornada no mercado digital.</p>
+                </div>
+                <div class="mt-16 bg-slate-50 p-8 md:p-12 rounded-xl border border-gray-200">
+                    <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+                        <!-- What you will do? -->
+                        <div>
+                            <h3 class="text-xl font-bold text-[#0A3D62] mb-4">O que você vai fazer?</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Responder dúvidas de clientes via chat e e-mail.</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Registrar atendimentos em nosso sistema interno.</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Auxiliar na resolução de problemas simples dos usuários.</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Manter um alto padrão de qualidade e empatia no atendimento.</li>
+                            </ul>
+                        </div>
+                        <!-- What we look for? -->
+                        <div>
+                            <h3 class="text-xl font-bold text-[#0A3D62] mb-4">O que buscamos?</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Ensino Médio completo.</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Boa comunicação escrita e digitação.</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Proatividade e muita vontade de aprender.</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i><strong>Não é necessário experiência prévia.</strong></li>
+                            </ul>
+                        </div>
+                        <!-- What we offer? -->
+                        <div>
+                            <h3 class="text-xl font-bold text-[#0A3D62] mb-4">O que oferecemos?</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Salário de R$ 1.850/mês (6h/dia).</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Treinamento completo e remunerado.</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Auxílio Home Office de R$ 150/mês.</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0"></i>Plano de carreira e desenvolvimento.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: TESTIMONIALS -->
+        <section id="depoimentos" class="py-20 md:py-28 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#0A3D62]">A Carreira Deles Também Começou Aqui.</h2>
+                    <p class="mt-4 text-lg text-gray-600">Histórias reais de pessoas que, como você, buscaram uma primeira oportunidade e encontraram na RH Empresarial.</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&w=64&h=64" onerror="this.onerror=null;this.src='https://placehold.co/64x64/E2E8F0/4A5568?text=ML';" alt="Foto de Mariana L." class="w-16 h-16 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold text-[#0A3D62]">Mariana L.</h4>
+                                <p class="text-sm text-gray-500">Atendente Online</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Eu estava com medo de não conseguir nada sem experiência. A RH Empresarial foi a primeira empresa que realmente me treinou do zero. Hoje, tenho estabilidade e trabalho de casa. Sou muito grata."</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&w=64&h=64" onerror="this.onerror=null;this.src='https://placehold.co/64x64/E2E8F0/4A5568?text=JS';" alt="Foto de João S." class="w-16 h-16 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold text-[#0A3D62]">João S.</h4>
+                                <p class="text-sm text-gray-500">Atendente Online</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"O processo foi super transparente. A validação me deixou com um pé atrás no início, mas a equipe explicou tudo e o valor foi mesmo reembolsado. Empresa séria."</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 md:col-span-2 lg:col-span-1">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1974&auto=format&fit=crop&w=64&h=64" onerror="this.onerror=null;this.src='https://placehold.co/64x64/E2E8F0/4A5568?text=CA';" alt="Foto de Carla A." class="w-16 h-16 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold text-[#0A3D62]">Carla A.</h4>
+                                <p class="text-sm text-gray-500">Atendente Online</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"O que mais gostei foi o treinamento. Eles realmente preparam a gente para o trabalho. Para quem está começando, isso faz toda a diferença. Recomendo!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: ABOUT RH EMPRESARIAL -->
+        <section id="quem-somos" class="py-20 md:py-28 bg-white fade-in-section">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#0A3D62]">Nossa Missão é Conectar Potenciais a Oportunidades.</h2>
+                    <p class="mt-6 text-lg text-gray-600">A RH Empresarial nasceu da crença de que o talento não tem CEP e a oportunidade não deveria exigir um currículo perfeito. Somos uma empresa de tecnologia e recursos humanos focada em criar pontes para o mercado de trabalho digital, capacitando novos profissionais para os desafios do futuro, tudo isso no conforto de suas casas.</p>
+                    <div class="mt-8 flex space-x-8">
+                        <div class="text-center">
+                            <i data-lucide="shield-half" class="w-10 h-10 text-[#0C7B93] mx-auto"></i>
+                            <p class="mt-2 font-semibold">Confiança</p>
+                        </div>
+                         <div class="text-center">
+                            <i data-lucide="trending-up" class="w-10 h-10 text-[#0C7B93] mx-auto"></i>
+                            <p class="mt-2 font-semibold">Desenvolvimento</p>
+                        </div>
+                         <div class="text-center">
+                            <i data-lucide="lightbulb" class="w-10 h-10 text-[#0C7B93] mx-auto"></i>
+                            <p class="mt-2 font-semibold">Inovação</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/800x600/E2E8F0/4A5568?text=Imagem+Indisponível';" alt="Equipe colaborando em um escritório moderno" class="rounded-xl shadow-xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: FAQ -->
+        <section id="duvidas" class="py-20 md:py-28 fade-in-section">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#0A3D62]">Ainda tem dúvidas? A gente responde.</h2>
+                    <p class="mt-4 text-lg text-gray-600">Separamos as perguntas mais comuns para te deixar 100% seguro.</p>
+                </div>
+                <div class="mt-12 space-y-4">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-[#0A3D62]">
+                            <span>A vaga é real mesmo? Por que nunca ouvi falar da RH Empresarial?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-gray-600">Sim, a vaga é 100% real. Somos uma empresa de recrutamento focada no mercado digital e muitas de nossas vagas são para empresas parceiras que preferem não se expor no início do processo. Nosso CNPJ está no rodapé da página para sua consulta. Transparência é nosso pilar.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-[#0A3D62]">
+                            <span>Eu realmente não preciso de nenhuma experiência?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-gray-600">Não precisa. Nosso processo é desenhado para identificar potencial, não experiência passada. Oferecemos um treinamento completo e remunerado que vai te capacitar para todas as tarefas do dia a dia. O que mais valorizamos é a sua vontade de aprender e crescer conosco.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-[#0A3D62]">
+                            <span>Por que preciso fazer essa validação de R$ 1,00? Isso é seguro?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-gray-600">Totalmente seguro. Essa é uma exigência da plataforma de pagamentos que processará seu salário. A microtransação de R$ 1,00 serve para confirmar que a conta bancária informada pertence a você, evitando fraudes e garantindo que seu salário seja depositado corretamente. O valor é simbólico e <strong>100% reembolsado</strong> no seu primeiro pagamento.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 4 -->
+                    <div class="accordion-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-[#0A3D62]">
+                           <span>E se eu não tiver o R$ 1,00 para a validação?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-gray-600">Entendemos perfeitamente. Se essa for uma barreira para você, não se preocupe. Ao chegar nesta etapa, você terá a opção de sinalizar que precisa de auxílio. Nossa equipe entrará em contato para encontrar uma solução junto com você. Não queremos que isso te impeça de conseguir a vaga.</p>
+                        </div>
+                    </div>
+                     <!-- Accordion Item 5 -->
+                    <div class="accordion-item bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <button class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-[#0A3D62]">
+                           <span>O treinamento é pago?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-5 pt-0 text-gray-600">Não, de forma alguma. O treinamento é <strong>totalmente gratuito e remunerado</strong>. A partir do primeiro dia de treinamento, você já é considerado um colaborador e receberá por isso. Nós investimos em você.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: FINAL CTA -->
+        <section id="cta-final" class="py-20 md:py-28 bg-gradient-to-r from-[#0A3D62] to-[#0C7B93] fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold text-white">Pronto para Dar o Primeiro Passo na Sua Carreira?</h2>
+                <p class="mt-6 max-w-2xl mx-auto text-lg text-white/90">A vaga que você procura está a um clique de distância. O processo é rápido, seguro e pode ser o início de uma nova jornada profissional.</p>
+                 <div class="mt-10">
+                    <a href="https://t.me/recrutadordarhbot" target="_blank" class="inline-flex items-center justify-center gap-3 bg-[#1DD1A1] text-white text-lg font-bold py-4 px-10 rounded-lg shadow-xl hover:bg-green-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl transform">
+                        <i data-lucide="rocket" class="w-6 h-6"></i>
+                        Quero Minha Vaga Home Office!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SECTION 8: FOOTER -->
+    <footer class="bg-[#0A3D62] text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <div class="flex items-center justify-center md:justify-start space-x-2">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span class="text-xl font-bold">RH Empresarial</span>
+                    </div>
+                    <p class="mt-4 text-white/70">Conectando talentos a oportunidades no mercado digital.</p>
+                    <p class="mt-2 text-white/70 font-semibold">CNPJ: 48.123.456/0001-78</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contato</h4>
+                    <ul class="space-y-2 text-white/70">
+                        <li><a href="mailto:contato@rhempresarial.com.br" class="hover:text-white">contato@rhempresarial.com.br</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Siga-nos</h4>
+                    <a href="https://instagram.com/vettorastudio" target="_blank" rel="noopener noreferrer" class="inline-block p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+                        <i data-lucide="instagram" class="w-6 h-6 text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-white/20 pt-8 text-center text-white/60 text-sm">
+                <p>© 2025 RH Empresarial. Todos os direitos reservados.</p>
+                <p class="mt-2">
+                    <a href="#" class="hover:text-white underline">Política de Privacidade</a> | 
+                    <a href="#" class="hover:text-white underline">Termos de Uso</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FIX: Removed the old lucide script tag from here -->
+    <script>
+        // FIX: Wrap all script logic in a DOMContentLoaded event listener.
+        // This ensures the page's HTML is ready before the script runs.
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- Logic that depends only on the DOM ---
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu on link click
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Accordion functionality
+            document.querySelectorAll('.accordion-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const accordionItem = header.parentElement;
+                    const accordionContent = accordionItem.querySelector('.accordion-content');
+                    const accordionIcon = header.querySelector('i');
+
+                    // Close all other accordions
+                    document.querySelectorAll('.accordion-item').forEach(item => {
+                        if (item !== accordionItem) {
+                            item.querySelector('.accordion-content').style.maxHeight = null;
+                            const otherIcon = item.querySelector('.accordion-header i');
+                            if(otherIcon) {
+                                otherIcon.classList.remove('rotate-180');
+                            }
+                        }
+                    });
+
+                    // Toggle the clicked accordion
+                    if (accordionContent.style.maxHeight) {
+                        accordionContent.style.maxHeight = null;
+                        if(accordionIcon) {
+                           accordionIcon.classList.remove('rotate-180');
+                        }
+                    } else {
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                        if(accordionIcon) {
+                            accordionIcon.classList.add('rotate-180');
+                        }
+                    }
+                });
+            });
+            
+            // Header shadow on scroll
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                header.classList.toggle('shadow-lg', window.scrollY > 10);
+            });
+
+            // Fade-in animation on scroll
+            const sections = document.querySelectorAll('.fade-in-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // --- Logic that depends on the external lucide script ---
+            
+            // FIX: Dynamically create and load the lucide script.
+            // Then, initialize the icons in the 'onload' callback.
+            const lucideScript = document.createElement('script');
+            lucideScript.src = 'https://unpkg.com/lucide@latest/dist/lucide.min.js';
+            lucideScript.onload = () => {
+                lucide.createIcons();
+            };
+            // Append to the body to start loading
+            document.body.appendChild(lucideScript);
+        });
+    </script>
+</body>
+</html>
